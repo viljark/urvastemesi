@@ -2,7 +2,6 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
-import { OrderingForm } from "../components/OrderingForm";
 import CMSImage from "../components/CMSImage";
 import Content from "../components/Content";
 import Footer from "../components/Footer";
@@ -10,7 +9,7 @@ import News from "../components/News";
 
 export class IndexPageTemplate extends React.Component {
   render() {
-    const { heroImage, hero, picture1, html, isFormActive, notActiveDescription, formDescription, formTitle, contentComponent, footer } = this.props;
+    const { heroImage, hero, picture1, html, contentComponent, footer } = this.props;
     const PageContent = contentComponent || Content;
     return (
       <>

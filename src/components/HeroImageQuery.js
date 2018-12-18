@@ -8,7 +8,9 @@ class HeroImageQuery extends Component {
     const getImageInfo = (data) => {
       if (data.allFile.edges) {
         const image = data.allFile.edges.find((e) => e.node.childImageSharp.fluid.src.indexOf(img) > -1)
-        return image.node;
+        if (image) {
+          return image.node;
+        }
       }
       return undefined;
     };
