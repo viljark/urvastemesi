@@ -6,16 +6,16 @@ import Layout from '../components/Layout'
 export default class BlogPostsPage extends React.Component {
   render() {
     const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    const posts = data.allMarkdownRemark ? data.allMarkdownRemark.posts : undefined;
 
     return (
       <Layout>
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+              <h1 className="has-text-weight-bold is-size-2">Uudised</h1>
             </div>
-            {posts
+            {posts && posts
               .map(({ node: post }) => (
                 <div
                   className="content"
@@ -58,7 +58,7 @@ export const pageQuery = graphql`
   query BlogPostsQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+      filter: { frontmatter: { templateKey: { eq: "blog-post" }, title: { ne: "placeholder"} }}
     ) {
       edges {
         node {

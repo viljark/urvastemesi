@@ -137,13 +137,23 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+.column.card .spacer {
+  padding: .5rem;
+}
+
+.checkout {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.price-wrap {
+  justify-content: space-between;
+  align-items: center;
+}
+.add-to-order {
+  border-radius: 0 ;
+  margin: -1px;
 }

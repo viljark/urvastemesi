@@ -6,6 +6,7 @@ import { OrderingForm } from "../components/OrderingForm";
 import CMSImage from "../components/CMSImage";
 import Content from "../components/Content";
 import Footer from "../components/Footer";
+import News from "../components/News";
 
 export class IndexPageTemplate extends React.Component {
   render() {
@@ -30,12 +31,7 @@ export class IndexPageTemplate extends React.Component {
               <PageContent content={html}/>
             </div>
             <div className="column is-4">
-              <OrderingForm
-                active={isFormActive}
-                notActiveDescription={notActiveDescription}
-                description={formDescription}
-                heading={formTitle}
-              />
+              <News/>
             </div>
           </div>
         </div>
@@ -81,10 +77,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        formTitle
-        formDescription
-        isFormActive
-        notActiveDescription
       }
     }
     allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/pages\\/index/"}}) {

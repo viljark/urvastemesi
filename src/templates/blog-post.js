@@ -1,15 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 export const BlogPostTemplate = ({
   content,
   contentComponent,
-  description,
   tags,
   title,
   helmet,
@@ -25,7 +23,6 @@ export const BlogPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <p>{description}</p>
             <PostContent content={content} />
           </div>
         </div>
@@ -37,7 +34,6 @@ export const BlogPostTemplate = ({
 BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
-  description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.instanceOf(Helmet),
 }
@@ -50,8 +46,7 @@ const BlogPost = ({ data }) => {
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        description={post.frontmatter.description}
-        helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
+        helmet={<Helmet title={`${post.frontmatter.title} | Uudised`} />}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
@@ -75,7 +70,6 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
-        description
       }
     }
   }

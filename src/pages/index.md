@@ -13,3 +13,8 @@ footer:
   telephone:
   text: OÜ Urvaste Mesi
 ---
+Mesi on pärit Võrumaalt.
+
+Mesilaspered on pärit.
+
+Kojuvedu Tartu lähiümbruses tasuta

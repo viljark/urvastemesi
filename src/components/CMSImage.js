@@ -4,7 +4,6 @@ import Img from "./Img";
 
 const CMSImage = ({ imageInfo = {}, className }) => {
   const imageStyle = { borderRadius: '5px' }
-  console.log('imageInfo', imageInfo);
   const { alt = '', childImageSharp, image } = imageInfo
 
   if (!!image && !!image.childImageSharp) {

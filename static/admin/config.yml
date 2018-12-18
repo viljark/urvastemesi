@@ -14,11 +14,22 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Pealkiri", name: "title", widget: "string"}
+      - {label: "Lisamise kuupäev", name: "date", widget: "datetime"}
+      - {label: "Sisu", name: "body", widget: "markdown"}
+  - name: "product"
+    label: "Tooted"
+    folder: "src/pages/tooted"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Lisamise kuupäev", name: "date", widget: "datetime"}
+      - {label: "Pilt", name: "picture", widget: image}
+      - {label: "Hind", name: "price", widget: "number", valueType: "float"}
+      - {label: "Lühikirjeldus", name: "description", widget: "text"}
+      - {label: "Pikk kirjeldus", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Lehed"
     files:
@@ -43,16 +54,3 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Pealkiri", name: "title", widget: "string"}
           - {label: "Sisu", name: "body", widget: "markdown"}
-      - file: "src/pages/tooted/index.md"
-        label: "Tooted"
-        name: "tooted"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
-          - {label: Suur tekst, name: title, widget: string}
-          - {label: Bänner, name: image, widget: image}
-          - {label: Pealkiri, name: heading, widget: string}
-          - {label: Sisu, name: description, widget: text}
-          - {label: Main, name: main, widget: object, fields: [{label: Pealkiri, name: heading, widget: string}, {label: Sisu, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-          - {label: Tsitaadid, name: testimonials, widget: list, fields: [{label: Tsitaat, name: quote, widget: string}, {label: Autor, name: author, widget: string}]}
-          - {label: Lai pilt, name: full_image, widget: image}
-          - {label: Tulbad, name: columns, widget: object, fields: [{label: Pealkiri, name: heading, widget: string}, {label: Kirjeldus, name: description, widget: text}, {label: Tulbad, name: columns, widget: list, fields: [{label: Tulba pealkiri, name: title, widget: string}, {label: Suur tekst, name: big, widget: string}, {label: Kirjeldus, name: description, widget: string}, {label: Read, name: items, widget: list}]}]}
