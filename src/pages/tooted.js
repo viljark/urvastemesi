@@ -44,7 +44,7 @@ export default class ProductsPage extends React.Component {
     return (
       <Layout>
         <section className="hero is-medium is-bold">
-          <HeroImageQuery img={"mesi2.jpg"} />
+          <HeroImageQuery img={"mesi2"} />
           <div className="hero-body">
             <div className="container has-text-centered">
               <h1 className="title has-text-white is-size-2 is-size-3-mobile">
