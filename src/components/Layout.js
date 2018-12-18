@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 
 import Navbar from "../components/Navbar";
-import favicon from "../img/favicon.ico";
+import favicon from "../img/urvaste-mesi2.png";
 import "./all.scss";
 
 typeof window !== 'undefined' && require("picturefill") && require("picturefill/dist/plugins/mutation/pf.mutation");

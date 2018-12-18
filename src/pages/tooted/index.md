@@ -15,7 +15,7 @@ main:
     image: /img/DSC_0879.jpg
   image3:
     alt: ''
-    image: /img/DSC_0129.jpg
+    image: /img/DSC_0180.jpg
 testimonials: []
 full_image: /img/mesilane.jpeg
 columns:
