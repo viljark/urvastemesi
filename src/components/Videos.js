@@ -22,7 +22,7 @@ const Videos = () => {
       render={data => (
         <div className="videos">
           {
-            data.allFile.edges && data.allFile.edges.map((edge) => (
+            data.allFile && data.allFile.edges && data.allFile.edges.map((edge) => (
                 <div className="videos__wrap" tabIndex={0} key={edge.node.publicURL}>
                   <Player src={edge.node.publicURL} fluid={true} aspectRatio={"4:3"}>
                     <BigPlayButton position="center"/>
