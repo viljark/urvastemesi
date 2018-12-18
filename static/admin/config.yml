@@ -1,0 +1,58 @@
+backend:
+  name: git-gateway
+#  name: 'test-repo'
+  branch: master
+media_folder: static/img
+public_folder: /img
+display_url: https://urvastemesi.ee
+
+collections:
+  - name: "blog"
+    label: "Uudised"
+    folder: "src/pages/uudised"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+  - name: "pages"
+    label: "Lehed"
+    files:
+      - file: "src/pages/index.md"
+        label: "Avaleht"
+        name: "avaleht"
+        fields:
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index"}
+        - {label: "Suur tekst", name: "hero", widget: "string"}
+        - {label: "Bänner", name: "heroImage", widget: image}
+        - {label: "Tellimisvormi pealkiri", name: "formTitle", widget: "string"}
+        - {label: "Tellimisvormi kirjeldus", name: "formDescription", widget: "string"}
+        - {label: "Kas vorm on aktiivne?", name: "isFormActive", widget: "boolean"}
+        - {label: "Mitteaktiivse vormi asemel tekst", name: "notActiveDescription", widget: "string"}
+        - {label: "Avalehe pilt 1", name: "picture1", widget: image}
+        - {label: "Lehe sisu", name: "body", widget: "markdown"}
+        - {label: Jalus, name: footer, widget: object, fields: [{label: "Jaluse tekst", name: "text", widget: "string"}, {label: "Telefoni nr", name: "telephone", widget: "string"}, {label: "E-mail", name: "email", widget: "string"}, {label: "Aadress", name: "address", widget: "string"}]}
+      - file: "src/pages/galerii/index.md"
+        label: "Galerii"
+        name: "galerii"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Pealkiri", name: "title", widget: "string"}
+          - {label: "Sisu", name: "body", widget: "markdown"}
+      - file: "src/pages/tooted/index.md"
+        label: "Tooted"
+        name: "tooted"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
+          - {label: Suur tekst, name: title, widget: string}
+          - {label: Bänner, name: image, widget: image}
+          - {label: Pealkiri, name: heading, widget: string}
+          - {label: Sisu, name: description, widget: text}
+          - {label: Main, name: main, widget: object, fields: [{label: Pealkiri, name: heading, widget: string}, {label: Sisu, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
+          - {label: Tsitaadid, name: testimonials, widget: list, fields: [{label: Tsitaat, name: quote, widget: string}, {label: Autor, name: author, widget: string}]}
+          - {label: Lai pilt, name: full_image, widget: image}
+          - {label: Tulbad, name: columns, widget: object, fields: [{label: Pealkiri, name: heading, widget: string}, {label: Kirjeldus, name: description, widget: text}, {label: Tulbad, name: columns, widget: list, fields: [{label: Tulba pealkiri, name: title, widget: string}, {label: Suur tekst, name: big, widget: string}, {label: Kirjeldus, name: description, widget: string}, {label: Read, name: items, widget: list}]}]}
