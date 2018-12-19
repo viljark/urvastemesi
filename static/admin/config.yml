@@ -7,7 +7,7 @@ public_folder: /img
 display_url: https://urvastemesi.ee
 
 collections:
-  - name: "blog"
+  - name: "uudised"
     label: "Uudised"
     folder: "src/pages/uudised"
     create: true
@@ -17,7 +17,7 @@ collections:
       - {label: "Pealkiri", name: "title", widget: "string"}
       - {label: "Lisamise kuupäev", name: "date", widget: "datetime"}
       - {label: "Sisu", name: "body", widget: "markdown"}
-  - name: "product"
+  - name: "tooted"
     label: "Tooted"
     folder: "src/pages/tooted"
     create: true
