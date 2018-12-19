@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        exclude: ["/_schema", "/_schema/*", `/submitForm`],
+        exclude: ["/_schema", "/_schema/**/*", `/submitForm`],
       }
     },
     {
