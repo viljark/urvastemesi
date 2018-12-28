@@ -91,7 +91,7 @@ export class OrderingForm extends React.Component {
                     <p className="help">Vajalik arve edastamiseks</p>
                   </div>
                   <div className="field">
-                    <label className="label">Aadress või pakiautomaadi aadress</label>
+                    <label className="label">Aadress</label>
                     <div className="control has-icons-left">
                       <input required={true} name="aadress" className="input" type="text" placeholder=""/>
                       <span className="icon is-small is-left">
@@ -99,22 +99,6 @@ export class OrderingForm extends React.Component {
                       </span>
                     </div>
                   </div>
-
-                  <div className="field">
-                    <label className="label">Saatmisviis</label>
-                    <div className="control">
-                      <div className="select">
-                        <select required={true} name="saatmisviis" defaultValue={""}>
-                          <option value={""}>-- Vali saatmisviis --</option>
-                          <option value={"Omniva"}>Omniva pakiautomaat</option>
-                          <option value={"Smartpost"}>Smartpost</option>
-                          <option value={"Tulen ise järele"}>Tulen ise järele</option>
-                          <option value={"?"}>?</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
                   <div className="field">
                     <label className="label">Lisainfo</label>
                     <div className="control">
