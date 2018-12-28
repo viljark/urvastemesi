@@ -1,9 +1,11 @@
 ---
 templateKey: index
 hero: Mee tootmine ja müük
-heroImage: /img/_mg_0324.jpg
+heroImage: /img/20181219_104547.jpg
 formTitle: Tellimiseks palun täida järgnev vorm
-formDescription: 'Natukene pikem jutt, millal saab tellida'
+formDescription: >-
+  Kreemja ja vedela mee saadavus sõltub hooajast. Võtame ühendust vastavat
+  toodet hetkel ei ole.
 isFormActive: true
 notActiveDescription: Tellimine pole hetkel aktiivne.
 picture1: /img/whatsapp-image-2018-11-08-at-20.54.51.jpeg
@@ -27,4 +29,4 @@ Mett on võimalik koju tellida ja ka osta järgnevatest müügikohtadest:
 
 Kojuvedu toimub kaardil märgitud piirkonnas, vastavalt tellimustele vähemalt 1 kord kuus.
 
-![](/img/piirkond.png)
+![null](/img/piirkond.png)
