@@ -7,7 +7,6 @@ export default class BlogPostsPage extends React.Component {
   render() {
     const { data } = this.props
     const posts = data.allMarkdownRemark ? data.allMarkdownRemark.posts : undefined;
-
     return (
       <Layout>
         <section className="section">

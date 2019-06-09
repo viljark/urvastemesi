@@ -21,7 +21,7 @@ class News extends Component {
                   frontmatter {
                     title
                     templateKey
-                    date(formatString: "DD MMMM YYYY")
+                    date(formatString: "DD.MM.YYYY")
                   }
                 }
               }
@@ -39,8 +39,12 @@ class News extends Component {
               <>
                 {i > 0 && (<hr/>)}
                 <article key={i}>
-                  <h4>{frontmatter.title}</h4>
+                  <h4>{frontmatter.title} </h4>
+                  <p className="date">
+                    <small>{frontmatter.date}</small>
+                  </p>
                   <p>{excerpt}</p>
+
                   <p className="has-text-right">
                     <a className="button is-primary is-outlined is-small" href={fields.slug}>Loe edasi</a>
                   </p>
