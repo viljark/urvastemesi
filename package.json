@@ -5,7 +5,7 @@
   "author": "Viljar Kärgenberg",
   "dependencies": {
     "bulma": "^0.7.2",
-    "gatsby": "^2.0.0",
+    "gatsby": "2.3.10",
     "gatsby-image": "^2.0.19",
     "gatsby-plugin-google-analytics": "^2.0.7",
     "gatsby-plugin-netlify": "^2.0.0",
