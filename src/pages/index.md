@@ -4,7 +4,7 @@ hero: Mee tootmine ja müük
 heroImage: /img/20181219_104547.jpg
 formTitle: Tellimiseks palun täida järgnev vorm
 formDescription: >-
-  Kreemja ja vedela mee saadavus sõltub hooajast. Võtame ühendust vastavat
+  Kreemja ja vedela mee saadavus sõltub hooajast. Võtame ühendust, kui vastavat
   toodet hetkel ei ole.
 isFormActive: true
 notActiveDescription: Tellimine pole hetkel aktiivne.
@@ -22,10 +22,13 @@ Mett on võimalik koju tellida ja ka osta järgnevatest müügikohtadest:
 * Järvemäe talu Kuldres
 * Tartus Lõunakeskuse lähedal, Eerika tee
 * Tartu Turuhoone
+* Tartu Väliturg, Saarepiiga kalapood
+* Tartus Kvartali keskus, 0-korrus Italian Taste (Maksimarketi ees)
 * Võru Oma Talu Pood
 * Antsla Hauka
 * Kuldre kauplus
 * erinevad laadad Lõuna-Eestis
+* üle Eesti pakiautomaatidesse. Üle 100 euroste tellimuste puhul on saatmine tasuta
 
 Kojuvedu toimub kaardil märgitud piirkonnas, vastavalt tellimustele vähemalt 1 kord kuus.
 
