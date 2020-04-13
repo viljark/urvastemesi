@@ -19,7 +19,7 @@ Mesi on korjatud Võrumaa metsadest ja niitudelt, Otepää kõrgustiku Uhtjärve
 
 Mett on võimalik koju tellida ja ka osta järgnevatest müügikohtadest:
 
-* Järvemäe talu Kuldres
+* Järvemäe talu Kuldre küla
 * Tartus Lõunakeskuse lähedal, Eerika tee
 * Tartu Turuhoone
 * Tartu Väliturg, Saarepiiga kalapood
