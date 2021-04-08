@@ -23,6 +23,7 @@ Mett on võimalik koju tellida ja ka osta järgnevatest müügikohtadest:
 * Kuldre kauplus
 * Antsla Coop
 * Võru Oma Talu Pood
+* Märja Coop
 * Tartus Lõunakeskuse lähedal, Eerika tee
 * Tartu Turuhoone
 * Tartu Väliturg, Saarepiiga kalapood
