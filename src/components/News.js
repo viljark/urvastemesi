@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { graphql, StaticQuery } from "gatsby";
+import { graphql, StaticQuery, Link } from "gatsby";
 
 class News extends Component {
   render() {
@@ -39,7 +39,9 @@ class News extends Component {
               <>
                 {i > 0 && (<hr/>)}
                 <article key={i}>
-                  <h4>{frontmatter.title} </h4>
+                  <Link  to={fields.slug}>
+                    <h4>{frontmatter.title} </h4>
+                  </Link>
                   <p className="date">
                     <small>{frontmatter.date}</small>
                   </p>
