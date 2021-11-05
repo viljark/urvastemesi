@@ -1,19 +1,25 @@
 //$navbar-background-color: transparent;
-@import "~bulma/sass/utilities/initial-variables";
+@import '~bulma/sass/utilities/initial-variables';
 
 // Config vars
-$theme-yellow: #FFAF00;
+$theme-yellow: #ffaf00;
 $inverted: #fff;
 
 $primary: $theme-yellow;
 $primary-invert: $inverted;
-@import "~bulma";
+@import '~bulma';
 
-html, body {
+html,
+body {
   background-color: #fafafa;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Quattrocento Sans', sans-serif;
 }
 
@@ -22,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   .title {
     background: $theme-yellow;
     display: inline-block;
-    padding: .2em .3em .25em .3em;
+    padding: 0.2em 0.3em 0.25em 0.3em;
   }
 }
 
@@ -37,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
   }
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     bottom: 0;
@@ -49,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
   background-size: cover;
   font-family: 'Quattrocento Sans', sans-serif;
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     min-height: 5.25rem !important;
   }
   //filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, .2));
@@ -63,14 +69,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .custom-box {
   padding: 2rem;
-  @media(max-width: $tablet) {
+  @media (max-width: $tablet) {
     padding: 0;
   }
 }
 .react-photo-gallery--gallery {
   img {
     cursor: pointer;
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
     &:hover {
       transform: scale(1.02);
     }
@@ -99,10 +105,11 @@ h1, h2, h3, h4, h5, h6 {
     flex-basis: calc(50% - 4px);
     margin: 2px;
     position: relative;
-    @media(max-width: $tablet) {
+    @media (max-width: $tablet) {
       flex-basis: 100%;
     }
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       .videos__name {
         opacity: 0;
       }
@@ -113,24 +120,24 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 0;
     opacity: 1;
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
     font-size: 18px;
-    padding: .5em;
+    padding: 0.5em;
   }
 }
 
 .logo {
-  background: url("../img/urvaste-mesi2.png");
+  background: url('../img/urvaste-mesi2.png');
   background-size: cover;
   height: 160px;
   width: 125px;
   position: absolute;
-  transition: all .15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   &:hover {
     background-color: transparent !important;
     transform: scale(1.02);
   }
-  @media(max-width: $desktop) {
+  @media (max-width: $desktop) {
     height: 80px;
     width: 62px;
     margin-left: 1em;
@@ -138,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .column.card .spacer {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .checkout {
@@ -154,11 +161,36 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 .add-to-order {
-  border-radius: 0 ;
+  border-radius: 0;
   margin: -1px;
 }
 .date {
   margin-top: -1.2em;
   display: block;
   margin-bottom: 1em;
+}
+a.navbar-item,
+.navbar-link {
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 0px 0px 5px rgb(136, 100, 0);
+  @media (max-width: $tablet) {
+    text-shadow: none;
+  }
+}
+
+iframe {
+  max-width: 100%;
+  width: 100%;
+  height: calc(100vw / 3);
+  max-height: 685px;
+  @media (max-width: $tablet) {
+    height: calc(100vw / 2);
+  }
+}
+a h4 {
+  &:hover {
+    color: $theme-yellow;
+    text-decoration: underline;
+  }
 }
