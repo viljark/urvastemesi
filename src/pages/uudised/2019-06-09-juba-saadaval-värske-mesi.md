@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: 'Müügil kvaliteetne Võrumaa mesi. '
-date: 2020-04-12T09:36:14.381Z
+date: 2022-08-01T09:36:14.381Z
 ---
 Hind **7€/kg**, hulgimüük - hind **kokkuleppel**
 
