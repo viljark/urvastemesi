@@ -34,4 +34,4 @@ Mett on võimalik koju tellida ja ka osta järgnevatest müügikohtadest:
 
 Kojuvedu toimub kaardil märgitud piirkonnas.
 
-![null](/img/piirkond.png)
+![null](/img/piirkond.jpg)
