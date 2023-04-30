@@ -1,7 +1,7 @@
 ---
 templateKey: index
 hero: Mee tootmine ja müük
-heroImage: /img/20181219_104547.jpg
+heroImage: /img/img-20190630-wa0000.jpg
 formTitle: Tellimiseks palun täida järgnev vorm
 formDescription: >-
   Kreemja ja vedela mee saadavus sõltub hooajast. Võtame ühendust, kui vastavat
