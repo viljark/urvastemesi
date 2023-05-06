@@ -37,7 +37,7 @@ class Navbar extends Component {
                 Galerii
               </Link>
               <a className="navbar-item"
-                 href="https://emadekasvatus.ee">
+                 href="https://mesilasemad.ee">
                 Mesilasemade müük
               </a>
             </div>
