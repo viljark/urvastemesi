@@ -91,9 +91,9 @@ export class OrderingForm extends React.Component {
                     <p className="help">Vajalik arve edastamiseks</p>
                   </div>
                   <div className="field">
-                    <label className="label">Aadress</label>
+                    <label className="label">Aadress / Pakiautomaadi nimi</label>
                     <div className="control has-icons-left">
-                      <input required={true} name="aadress" className="input" type="text" placeholder=""/>
+                      <input required={true} name="aadress/pakiautomaat" className="input" type="text" placeholder=""/>
                       <span className="icon is-small is-left">
                         <FaBuilding/>
                       </span>
