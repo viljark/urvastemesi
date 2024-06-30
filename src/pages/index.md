@@ -15,11 +15,11 @@ footer:
   telephone: +372 55903823
   text: OÜ Urvaste Mesi
 ---
-Mesi on korjatud Võrumaa metsadest ja niitudelt, Otepää kõrgustiku Uhtjärve ürgoru piirkonnast.
+<img src="/img/uma-mekk-jpg-logo.jpeg" width="120" style="float:right;"/><p>Mesi on korjatud Võrumaa metsadest ja niitudelt, Otepää kõrgustiku Uhtjärve ürgoru piirkonnast. </p>
 
 Mett on võimalik koju tellida ja ka osta järgnevatest müügikohtadest:
 
-* Järvemäe talu Kuldre küla
+* Järvemäe talu Kuldre küla 
 * Kuldre kauplus
 * Antsla Coop
 * Võru Oma Talu Pood
@@ -31,6 +31,7 @@ Mett on võimalik koju tellida ja ka osta järgnevatest müügikohtadest:
 * Märja Coop, Kambja vald
 * erinevad laadad Lõuna-Eestis
 * üle Eesti pakiautomaatidesse. Üle 100 euroste tellimuste puhul on saatmine tasuta
+
 
 Kojuvedu toimub kaardil märgitud piirkonnas.
 
