@@ -2,8 +2,8 @@
 templateKey: product
 title: 'Mesi 0.45kg, plastikpurk'
 date: 2018-12-28T13:35:11.814Z
-picture: /img/_mg_0327.jpg
+picture: /img/img_20250203_183437.jpg
 price: 4
-description: Valikus vedel ning kreemjas mesi.
+description: 'Vedel mesi, 0.45kg, plastikpurk'
 ---
- Valikus vedel ning kreemjas mesi.
+Vedel mesi, 0.45kg, plastikpurk
