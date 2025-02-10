@@ -41,8 +41,8 @@ export class OrderingForm extends React.Component {
                 <p>
                   {description || "Siia täpsem kirjeldus"}
                 </p>
-                <form name="Tellimus" method="POST" action="/submitForm" netlify>
-                 
+                <form name="Tellimus" method="POST" action="/submitForm"  data-netlify="true">
+                 <input type="hidden" name="form-name" value="Tellimus"/>
                   <div className="field">
                     <label className="label">Tellitavad tooted</label>
                     <table className="table is-striped">
@@ -93,7 +93,7 @@ export class OrderingForm extends React.Component {
                   <div className="field">
                     <label className="label">Pakiautomaadi asukoht/nimi</label>
                     <div className="control has-icons-left">
-                      <input required={true} name="pakiautomaat" className="input" type="text" placeholder=""/>
+                      <input required={true} name="aadress" className="input" type="text" placeholder=""/>
                       <span className="icon is-small is-left">
                         <FaBuilding/>
                       </span>
