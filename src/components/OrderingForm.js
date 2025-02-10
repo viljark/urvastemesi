@@ -93,7 +93,7 @@ export class OrderingForm extends React.Component {
                   <div className="field">
                     <label className="label">Pakiautomaadi asukoht/nimi</label>
                     <div className="control has-icons-left">
-                      <input required={true} name="aadress/pakiautomaat" className="input" type="text" placeholder=""/>
+                      <input required={true} name="pakiautomaat" className="input" type="text" placeholder=""/>
                       <span className="icon is-small is-left">
                         <FaBuilding/>
                       </span>
