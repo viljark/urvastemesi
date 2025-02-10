@@ -41,8 +41,8 @@ export class OrderingForm extends React.Component {
                 <p>
                   {description || "Siia täpsem kirjeldus"}
                 </p>
-                <form name="Tellimus" method="POST" action="/submitForm" data-netlify="true">
-                  <input type="hidden" name="form-name" value="Tellimus"/>
+                <form name="Tellimus" method="POST" action="/submitForm" netlify>
+                 
                   <div className="field">
                     <label className="label">Tellitavad tooted</label>
                     <table className="table is-striped">
